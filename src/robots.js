@@ -58,5 +58,17 @@ export const robots = [
     name: 'Clementina DuBugue',
     username: 'Lakistering',
     email: 'Rey.Padberg@karina.biz'
+  },
+  {
+    id: 11,
+    name: 'Constantine',
+    username: 'Delacruize',
+    email: 'Pragix@dot.net'
+  },
+  {
+    id: 12,
+    name: 'La Bergine vox',
+    username: 'Parisaul',
+    email: 'Elthonist@komst.fr'
   }
 ];
