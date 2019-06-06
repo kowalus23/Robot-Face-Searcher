@@ -1,3 +1,5 @@
+@import url(App.css);
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,33 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #3a3a3a;
+  background: linear-gradient(to left, rgb(205, 205, 205) 0%, rgb(239, 244, 244) 100%);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.header {
-  color: #9eebcf;
-}
-
-.warning {
-  color: #ff6868;
-  font-size: 2rem;
-}
-
-[type="search"] {
-  outline-color: #9eebcf;
-  outline-width: 0;
-  border-radius: 10px;
-  border: 3px solid transparent;
-  width: 300px;
-  transition: ease-in-out 500ms;
-}
-
-[type="search"]:focus {
-  border: 3px solid #9eebcf;
-  transform: scale(1.1);
 }

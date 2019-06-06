@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className={"tc"}>
         <h1 className={"mb0 header"}>RoboFriends</h1>
-        <small className={"header"}>by <a className={"header"} href="https://robohash.org/">https://robohash.org/</a></small>
+        <small className={"header"}>by <a className={"header"} href="https://robohash.org/">robohash.org</a></small>
         <SearchBox searchChange={this.onSearchChange}/>
         {
           filteredRobots.length > 0 ?
