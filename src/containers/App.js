@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from "../components/ErrorBoundry";
 
 class App extends Component {
   constructor(props) {
@@ -39,7 +40,9 @@ class App extends Component {
           {
             filteredRobots.length > 0 ?
               <Scroll>
-                <CardList robots={filteredRobots}/>
+                <ErrorBoundry>
+                  <CardList robots={filteredRobots}/>
+                </ErrorBoundry>
               </Scroll>
               :
               <h2 className={"warning"}>Nothing here matches your search ;(</h2>
