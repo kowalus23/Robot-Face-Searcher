@@ -24,20 +24,23 @@ body {
     width: 300px;
     transition: ease-in-out 400ms;
   }
+
   [type="search"]:focus {
     border: 3px solid #9eebcf;
     transform: scale(1.1);
   }
+
+  h1 {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    letter-spacing: 6px;
+    font-size: 3em;
+  }
+
   .header {
     color: #4c4c4c;
-
-    h1 {
-      font-family: 'SEGA LOGO FONT';
-      font-weight: 200;
-      letter-spacing: 6px;
-      font-size: 3em;
-    }
   }
+
   .powered {
     color: #4c4c4c;
 
@@ -45,6 +48,7 @@ body {
       color: #4c4c4c;
     }
   }
+
   .warning {
     color: #949494;
     font-size: 2rem;
