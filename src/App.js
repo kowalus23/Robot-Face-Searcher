@@ -22,9 +22,9 @@ class App extends Component {
       return robots.name.toLowerCase().includes(this.state.searchField.toLowerCase());
     });
     return (
-      <div className={"tc"}>
+      <div className={"tc container"}>
         <h1 className={"mb0 header"}>RoboFriends</h1>
-        <small className={"header"}>by <a className={"header"} href="https://robohash.org/">robohash.org</a></small>
+        <small className={"powered"}>by <a href="https://robohash.org/">robohash.org</a></small>
         <SearchBox searchChange={this.onSearchChange}/>
         {
           filteredRobots.length > 0 ?
