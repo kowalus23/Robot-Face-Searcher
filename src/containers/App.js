@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 
 class App extends Component {
   constructor(props) {
@@ -25,13 +25,13 @@ class App extends Component {
   };
 
   render() {
-    const filteredRobots = this.state.robots.filter(robots => {
-      return robots.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+    const {robots, searchField} = this.state;
+    const filteredRobots = robots.filter(robots => {
+      return robots.name.toLowerCase().includes(searchField.toLowerCase());
     });
-    if (this.state.robots === 0) {
-      return <h1>Loading</h1>
-    } else {
-      return (
+    return !robots ?
+      <h1>Loading</h1> :
+      (
         <div className={"tc container"}>
           <h1 className={"mb0 header"}>RoboFriends</h1>
           <small className={"powered"}>by <a href="https://robohash.org/">robohash.org</a></small>
@@ -46,7 +46,6 @@ class App extends Component {
           }
         </div>
       );
-    }
   };
 }
 
